@@ -1,0 +1,20 @@
+#!/opt/bin/python3
+
+import subprocess
+import time
+
+threshold = 0.5
+
+while True:
+    with open("/proc/loadavg") as file:
+        loadavg = float(file.read().split()[0])
+    print(f"The load average is {loadavg}")
+
+    if loadavg >= threshold:
+        subprocess.call(["/opt/bin/turnfanon"])
+        print("Turned fan on")
+    else:
+        subprocess.call(["/opt/bin/turnfanoff"])
+        print("Turned fan off")
+
+    time.sleep(1)
