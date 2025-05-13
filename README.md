@@ -1,2 +1,3 @@
-# rt-n56u-padavan-fan-control
-A set of scripts to control a fan hooked to an arduino from an ASUS RT-N56U running Padavan
+# RT-N56U Padavan Fan Control
+This repo contains the Arduino code, scripts, and kernel modules to turn a fan on or off from an ASUS RT-N56U running Padavan.
+
