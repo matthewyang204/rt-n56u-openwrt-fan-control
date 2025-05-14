@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Configure Atmega328p fan controller at /dev/ttyUSB0
+stty -F /dev/ttyUSB0 9600 cs8 -cstopb -parenb -ixon -ixoff -crtscts
+
+# Hold the fan controller
+exec 3<> /dev/ttyUSB0
+
+while true; do
+    sleep 86400
+done
