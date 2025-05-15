@@ -1,6 +1,13 @@
 # RT-N56U Padavan Fan Control
 This repo contains the Arduino code, scripts, and kernel modules to turn a fan on or off from an ASUS RT-N56U running Padavan.
 
+# Requirements
+- `opkg` (Entware package manager)
+- Python 3.6+
+- Linux kernel 3.4.110 (the latest version)
+- `bash`
+- `kmod`
+
 # Arduino
 Simply clone the repo onto your computer and upload the `.ino` file to an Arduino Uno.
 
