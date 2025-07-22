@@ -1,4 +1,4 @@
 #!/bin/bash
 
-insmod /lib/modules/3.4.110/kernel/drivers/usb/serial/usbserial.ko
+# insmod /lib/modules/3.4.110/kernel/drivers/usb/serial/usbserial.ko
 # insmod /opt/lib/modules/ch341.ko
