@@ -6,6 +6,7 @@ This repo contains the Arduino code, scripts, and kernel modules to turn a fan o
 - Python 3.6+
 - `bash`
 - A relatively recent OpenWRT release
+- `ch341` kernel module
 
 # Arduino
 Simply clone the repo onto your computer and upload the `.ino` file to an Arduino Uno.
