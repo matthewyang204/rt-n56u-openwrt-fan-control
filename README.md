@@ -17,3 +17,6 @@ Simply clone the repo onto your computer and upload the `.ino` file to an Arduin
 2. Copy the contents of the `modules` folder to `/opt/lib/modules`, creating the directories as needed with `mkdir`.
 3. Add `/opt/bin/holdfancontroller &` and `/opt/bin/loadfancontrolmodules` in respective order to your `/etc/storage/started_script.sh`. Optionally, you can add `/opt/bin/autofan > /dev/null &` to it to automatically start the fan control software on boot.
 4. Reboot your router.
+
+# License
+This project is licensed with a GPLv3 license. See the LICENSE file for more details.
