@@ -11,10 +11,10 @@ while True:
     print(f"The load average is {loadavg}")
 
     if loadavg >= threshold:
-        subprocess.call(["/opt/bin/turnfanon"])
+        subprocess.call(["/usr/local/bin/turnfanon"])
         print("Turned fan on")
     else:
-        subprocess.call(["/opt/bin/turnfanoff"])
+        subprocess.call(["/usr/local/bin/turnfanoff"])
         print("Turned fan off")
 
     time.sleep(1)
