@@ -1,0 +1,15 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+
+start() {
+    logger -t fancontrol "Starting fan controller..."
+    /usr/local/bin/holdfancontroller &
+    /usr/local/bin/autofan > /dev/null 2>&1 &
+}
+
+stop() {
+    logger -t fancontrol "Stopping fan controller..."
+    killall holdfancontroller
+    killall autofan
+}
