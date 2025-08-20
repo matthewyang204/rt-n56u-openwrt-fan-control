@@ -3,7 +3,7 @@
 import subprocess
 import time
 
-threshold = 0.5
+threshold = 1.0
 
 while True:
     with open("/proc/loadavg") as file:
